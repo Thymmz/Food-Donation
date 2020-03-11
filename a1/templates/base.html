@@ -1,0 +1,148 @@
+
+<html>
+
+<head>
+    <title>Food Donation - {% block title %}{% endblock %}</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="/course/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/main.css" rel="stylesheet">
+
+    <script src="/course/lib/jquery/jquery-3.3.1.min.js"></script>
+    <script src="/course/lib/popper/popper.min.js"></script>
+    <script src="/course/lib/bootstrap/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+<!-- Navbar--> 
+<nav class = "navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+<div class="container-fluid">
+    <a class = "navbar-brand" href = "/" id="logo"><img src="/img/icon2.png"></a>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="nav navbar-nav">
+          <li class="nav-item active" id="homepagelist">
+            <a class="nav-link" href="/">Home</a>
+          </li>
+          <li class="nav-item" id="homepagelist">
+            <a class="nav-link" href="/donate">Donate</a>
+          </li>
+          <li class="nav-item" id="homepagelist">
+            <a class="nav-link" href="#">Request</a>
+          </li>
+          <li class="nav-item" id="homepagelist">
+            <a class="nav-link" href="/location">Location</a>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          {% if session['user'] %}
+          <li class="nav-item dropdown{% if active == 'Account' %} active{% endif %}">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Hi {{ session['user']['username'] }}!
+          </a>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+              
+              <a class="dropdown-item" href="/logout">Log Out</a>
+          </div>
+          </li>
+          {% else %}
+            <li class="nav-item">
+              <button type="button" class="btn btn-dark" onclick="document.getElementById('id01').style.display='block'" id="navbarBtn">Sign Up</button>
+              <div id="id01" class="modal">
+                <form class="modal-content animate" action="/signup" method="POST">
+                  <div class="imgcontainer">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close">&times;</span>
+                    <img src="/img/loginavatar.png" alt="Avatar" class="avatar">
+                  </div>
+                  <div class="container">
+                    <label for="username" id="loginLabel"><b>Username</b></label>
+                    <input type="text" placeholder="Enter Username" name="username" required>
+                    <label for="password" id="loginLabel"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="password" required>
+                    <label for="re_password" id="loginLabel"><b> Confirm Password</b></label>
+                    <input type="password" placeholder="Re-enter Password" name="re_password" required>
+                    <button class="btn btn-outline-dark" type="submit" id="loginButton1">Sign Up</button>
+                    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="btn btn-dark" id="loginButton2">Cancel</button>
+                  </div>
+                </form>
+              </div>
+              <script>
+              var modal = document.getElementById('id01');
+              window.onclick = function(event) {
+                  if (event.target == modal) {
+                      modal.style.display = "none";
+                  }
+              }
+            </script>
+            </li>
+            <li class="nav-item">
+              <button type="button" class="btn btn-outline-light" onclick="document.getElementById('id02').style.display='block'" id="navbarBtn">Log In</button>
+              <div id="id02" class="modal">
+                <form class="modal-content animate" action="/login" method="POST">
+                  <div class="imgcontainer">
+                    <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close">&times;</span>
+                    <img src="/img/loginavatar.png" alt="Avatar" class="avatar">
+                  </div>
+                  <div class="container">
+                    <label for="username" id="loginLabel"><b>Username</b></label>
+                    <input type="text" placeholder="Enter Username" name="username" required>
+                    <label for="password" id="loginLabel"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="password" required>
+                    <button class="btn btn-outline-dark" type="submit" id="signupButton1">Log In</button>
+                    <button type="button" onclick="document.getElementById('id02').style.display='none'" class="btn btn-dark" id="signupButton2">Cancel</button>
+                  </div>
+                </form>
+              </div>
+              <script>
+              var modal = document.getElementById('id02');
+              window.onclick = function(event) {
+                  if (event.target == modal) {
+                      modal.style.display = "none";
+                  }
+              }
+              </script>
+            </li>
+            {% endif %}
+          </ul>
+    
+    </div>
+</div>
+</nav>
+
+    <main>
+        <div class="container content">
+            {% block content %}{% endblock %}
+        </div>
+    </main>
+
+<footer>
+<div class="container-fluid padding">
+<div class="row text-center">
+
+    <div class="col-md-6">
+      <img src = "/img/icon2.png" id="footerimg">
+      
+      <p>222-222-2222</p>
+      <p>mail@email.com</p>
+      <p>3605 Powelton Avenue</p>
+      <p>Philadelphia PA 19104</p>
+    </div>
+    <div class="col-md-6" id="footertxt">
+      <h5>Our Hours</h5>
+      <hr class="light">
+      <p>Monday-Friday: 9am - 9pm</p>
+      <p>Saturday-Sunday: 9am - 7pm</p>
+      <h5>Having Trouble?</h5>
+      <hr class="light">
+      <p>Contact us: helpline@email.com</p>
+    </div>
+</div>
+</div>
+</footer>
+
+</body>
+
+</html>

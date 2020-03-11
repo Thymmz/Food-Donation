@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+{% set active = "Location" %}
+
+{% block title %}
+Location
+{% endblock %}
+
+{% block content %}
+
+<div class="container-fluid padding">
+<div class="row welcome text-center">
+    <div class="col-12">
+        <h1 class = "display-4">Our Locations</h1>
+    </div>
+    <hr>
+</div>
+</div>
+
+
+<div class="container-fluid padding">
+    <div class="row padding">
+      <div class="col-md-4">
+        <div class="card">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3058.0757183321034!2d-75.20066198465828!3d39.96205977942056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c6c7dee59e4acd%3A0xe2640f7ee6fddfef!2s3836%20Spring%20Garden%20St%2C%20Philadelphia%2C%20PA%2019104!5e0!3m2!1sen!2sus!4v1583730065935!5m2!1sen!2sus" width="330" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+          <div class="card-body">
+            <p><b>Address:</b>  3836 Spring Garden St, Philadelphia, PA 19104.</p>
+            <p><b>Contact:</b>  111-111-1111</p>
+            
+          </div>
+        </div>
+      </div>
+    
+    
+      <div class="col-md-4">
+        <div class="card">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3058.162376676877!2d-75.19635118465835!3d39.96012217942085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c6c65399e6463d%3A0x70420c407c280a6f!2s3605%20Powelton%20Ave%2C%20Philadelphia%2C%20PA%2019104!5e0!3m2!1sen!2sus!4v1583729823333!5m2!1sen!2sus" width="330" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+          <div class="card-body">
+            <p><b>Address:</b>  3605 Powelton Ave Philadelphia, PA 19104.</p>
+            <p><b>Contact:</b>  222-222-2222</p>
+          </div>
+        </div>
+      </div>
+    
+      <div class="col-md-4">
+        <div class="card">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3058.044401321423!2d-75.19720168465827!3d39.96275997942052!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c6c65350b3be07%3A0x604feeee733596ce!2s3617%20Spring%20Garden%20St%2C%20Philadelphia%2C%20PA%2019104!5e0!3m2!1sen!2sus!4v1583730584206!5m2!1sen!2sus" width="330" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+          <div class="card-body">
+            <p><b>Address:</b>  3617 Spring Garden St Philadelphia, PA 19104.</p>
+            <p><b>Contact:</b>  333-333-3333</p>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <div class="container-fluid padding">
+    <div class="row welcome text-left">
+        <div class="col-12">
+            <p>You can always drop off food yourself to our locations if you wish to do so, our staff is always happy to help. Our employees will also input the data of the donated food themselves.</p>
+            <p>Please be sure to visit during office hours!!!</p>
+        </div>
+        
+    </div>
+    </div>
+
+    {% endblock %}

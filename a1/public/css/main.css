@@ -1,0 +1,246 @@
+/*Atharva Deshpande, ad3756@drexel.edu*/
+/*CS530: DUI, Assignment 1*/
+
+.body {
+    font-family: "Avenir";
+    font-size: 1rem;
+    background: #fff;
+}
+
+.navbar-brand img{
+    max-height: 110px;
+    margin-top: -25px;
+    margin-bottom: -25px;
+}
+
+.navbar{
+    background: cadetblue;
+}
+
+#homepagelist {
+    padding-right: 20px;
+  }
+  
+  .navbar-nav li {
+    padding-right: 20px;
+  }
+  
+  .nav-link {
+    font-size: 1.2em !important
+  }
+  
+  #navbarBtn {
+    width: 85px;
+    cursor: pointer;
+  }
+  
+
+  .navbar-right {
+    position: absolute;
+    right: 0%;
+    padding-right: 70px;
+  }
+  
+#homepagelist a:hover{
+  color: #0088a9;
+}
+
+  /* Modal Details */
+  
+  /* Full-width input fields */
+  input[type=text], input[type=password] {
+    width: 100%;
+    padding: 10px;
+    margin: 1px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  /* Modal window labels */
+  #loginLabel {
+    margin-top: 15px;
+  }
+  
+  /* Modal window button 1 */
+  #loginButton1, #signupButton1 {
+    width: 85px;
+    cursor: pointer;
+    margin-top: 15px;
+    margin-right: 10px;
+    margin-left: 36%;
+  }
+  
+  /* Modal window button 2 */
+  #loginButton2, #signupButton2 {
+    width: 85px;
+    cursor: pointer;
+    margin-top: 15px;
+  }
+
+  img.avatar {
+    width: 20%;
+    border-radius: 25%;
+  }
+  
+  
+  /* Center the image and position the close button */
+  .imgcontainer {
+    text-align: center;
+    margin: 10px 0 10px 0;
+    position: relative;
+  }
+  
+
+  .container {
+    padding: 5px;
+  }
+  
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    left: 0;
+    top: 0;
+    width: auto;; /* Full width */
+    height: auto;; /* Full height */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 10px;
+    
+    border-radius: 4px;
+  }
+  
+  /* Modal Content Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 50%; /* Could be more or less, depending on screen size */
+    padding: 1%;
+    text-align: left;
+  }
+  
+  /* The Close Button (x) */
+  .close {
+    position: absolute;
+    right: 1px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  .close:hover,.close:focus {
+    color: red;
+    cursor: pointer;
+  }
+  
+  .animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+  }
+  
+  @-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)}
+    to {-webkit-transform: scale(1)}
+  }
+  
+  @keyframes animatezoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+  }
+  
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+  }
+
+  #bikeimg{
+    max-height: 100px;
+}
+
+.content {
+    padding: 2rem 1.5rem;
+}
+
+.jumbotron {
+    padding: 1.5rem;
+    background: 0;
+}
+
+.jumbotron img {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#linkButtons {
+  padding: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+[class*="col-"] {
+  padding: 1rem;
+}
+
+.jumbotron img{
+  margin-top: 10px;
+}
+
+#dog2{
+  
+  height: 206px;
+}
+
+#food{
+  margin-top: 60px;
+  margin-left: 200px;
+}
+
+#JJbtn{
+  margin-top: 25px;
+}
+
+footer{
+  background-color: #3f3f3f;
+  color: #d5d5d5;
+  padding-top: 2rem;
+  width: 100%;
+}
+
+footer img{
+  margin-top: -50px;
+}
+
+hr {
+  border: 0;
+  clear:both;
+  display:block;
+  width: 96%;               
+  background-color: black;
+  height: 1px;
+}
+
+hr.light{
+  border-top: 1px solid #d5d5d5;
+  width: 75%;
+}
+
+#footerimg{
+  height: 160px;
+  width: 160px;
+}
+
+#footertxt{
+  margin-top: 5px;
+}
+
+#donateSubmit{
+  margin-bottom:50px;
+}

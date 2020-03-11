@@ -1,0 +1,87 @@
+
+
+{% extends 'base.html' %}
+{% set active = "Home" %}
+
+{% block title %}
+Home
+{% endblock %}
+
+{% block content %}
+
+<section class="jumbotron">
+    <div class="text-center">
+        <p><img class="img-fluid" src="/img/give-backup.png"></p>
+        <p>
+            <a href="/donate" class="btn my-2 mr-2 btn-dark" id="linkButtons">Donate</a>
+            <a href="#" class="btn my-2 mr-2 btn-dark" id="linkButtons">Request</a>
+            
+        </p>
+    </div>
+  </section>
+  
+  <div class="container-fluid padding">
+  <div class="row welcome text text-center">
+    <div class = "col-12">
+      <h1 class="display-4">Initiators</h1>
+    </div>
+    <hr>
+  </div>  
+  </div>
+  
+  <div class="container-fluid padding">
+  <div class="row padding">
+    <div class="col-md-4">
+      <div class="card">
+        <img class = "card-img-top" id="Atharva" src="/img/dog1.png">
+        <div class="card-body">
+          <h4 class="card-title">Atharva Deshpande</h4>
+          <p class = "card-text">Atharva is a student currently pursuing his Masters in Computer Science at Drexel University</p>
+          <a href = "#" class="btn btn-outline-dark">See Profile</a>
+        </div>
+      </div>
+    </div>
+  
+  
+    <div class="col-md-4">
+      <div class="card">
+        <img class = "card-img-top"  id="dog2"  src="/img/dog5.png">
+        <div class="card-body">
+          <h4 class="card-title">Alex Smith</h4>
+          <p class = "card-text">Alex is a youtuber who is currently very successful. His youtube channel has over 2 million subscribers.</p>
+          <a href = "#" class="btn btn-outline-dark">See Profile</a>
+        </div>
+      </div>
+    </div>
+  
+    <div class="col-md-4">
+      <div class="card">
+        <img class = "card-img-top"src="/img/dog3.png">
+        <div class="card-body">
+          <h4 class="card-title">John Jones</h4>
+          <p class = "card-text">John is an internet entrepreneur with almost 10 years of experience.</p>
+          <a href = "#" class="btn btn-outline-dark" id="JJbtn">See Profile</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  
+  <div class="container-fluid padding">
+  <div class="row padding"> 
+    <div class="col-lg-6">
+      <h2>Our Motivation</h2>
+      
+      <p>We believe that it is important to not waste food as much as possible. Food donation has been increasing for the past few decades as the
+        awareness for the lack of food for the underprivileged has increased. Big stores, restaurants, grocery shops, etc. are also frequently donating leftover food or supplies to the food banks,
+        food pantries and local food establishments.</p>
+        <p>We are just doing our part by making food donation easier for the common populace.</p>
+      <br>
+    </div>
+    <div class="col-lg-6">
+      <img src="/img/food.png" id="food" class="img-fluid">  
+    </div>
+  </div>
+  </div>
+
+{% endblock %}
